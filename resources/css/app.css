@@ -1,0 +1,132 @@
+:root {
+    --nav_bg: #2c3034;
+    --theme: darkOrange;
+    --body_bg: lavender;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: silver;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle, var(--theme), var(--nav_bg), var(--nav_bg));
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: radial-gradient(circle, var(--theme), var(--nav_bg), var(--nav_bg));
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    resize: none;
+    text-decoration: none;
+    font: normal 14px Verdana, sans-serif;
+    color: black;
+}
+
+html, body, #app {
+    height: 100%;
+}
+
+body {
+    background: var(--body_bg);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+main > * {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    cursor: default;
+}
+
+table * {
+    font-size: .8rem;
+}
+
+th, th * {
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #7f7f7f;
+    border-right: 1px solid #c9c9c9;
+    padding: 0 5px;
+    height: 2.2rem;
+}
+
+td:not(.align_left) {
+    text-align: center;
+}
+
+tbody tr:not(.tr_selected):hover td {
+    background-color: white;
+}
+
+tbody tr:hover td {
+    border-bottom: 1px solid var(--theme);
+}
+
+fieldset {
+    padding: 80px 100px;
+    border-radius: 10px;
+    height: auto !important;
+}
+
+legend {
+    margin: 0;
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: white;
+}
+
+button, button * {
+    font-size: 1.8rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+label {
+    font-weight: bold;
+}

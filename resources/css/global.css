@@ -1,0 +1,120 @@
+.txt_input {
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    caret-color: blue;
+    color: blue;
+    border: 1px solid black;
+}
+
+.tbl_container {
+    overflow: auto;
+    border: 2px solid black;
+    background: #e1e1e1;
+}
+
+.tr_selected .align_left {
+    font-weight: bold;
+}
+
+.tr_selected td {
+    background-color: #aac8ff;
+}
+
+.component_tool {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px outset white;
+    color: var(--nav_bg);
+}
+
+.component_tool:active {
+    border-style: inset;
+}
+
+.component_tool:hover {
+    color: var(--theme);
+}
+
+.offline * {
+    color: grey;
+}
+
+.anchor {
+    transition: transform .1s linear;
+    cursor: pointer;
+}
+
+.anchor:hover {
+    transform: scale(1.3);
+}
+
+.old_specs {
+    background-image: linear-gradient(45deg, transparent 96%, black 0);
+}
+
+.g1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.g2 {
+    margin-bottom: 20px;
+}
+
+.g3 {
+    gap: 5px;
+}
+
+.g5 {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.g6 {
+    align-items: center;
+    padding: 10px;
+}
+
+.g7 {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+
+.g8 {
+    display: flex;
+    align-items: center;
+}
+
+td .fa-solid:not(.fa-arrow-right-long) {
+    font-size: 1.2rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.no_disp {
+    display: none;
+}
+
+.full_width {
+    width: 100%;
+}
+
+.stretch {
+    align-self: stretch;
+    flex: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}
